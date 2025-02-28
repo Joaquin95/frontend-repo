@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+}
+.navbar .cryptogreek {
+  width: max(12vw, 120px);
+}
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.navbar li {
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar select {
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.navbar option {
+  background-color: #09005c;
+  color: white;
+}
+.navbar button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #393939;
+  background: white;
+  transition: background-color 0.5s ease;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navbar button:hover{
+  background-color: #c1b1e8d2;
+}
+
+.navbar button img {
+  width: 13px;
+}
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar button img {
+    width: 12px;
+  }
+}
