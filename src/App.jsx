@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import Coin from "./pages/Coins/Coins";
 import Footer from "./components/Footer/Footer";
 import SignUp from "./components/signUp/signUp";
-import Login from "./components/Login/login";
+import Login from "./components/Login/Login";
 import Dashboard from "./components/Dashboard/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoutes";
 
