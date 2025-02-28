@@ -26,9 +26,8 @@ const SignUp = () => {
 
     try {
       const API_URL = import.meta.env.VITE_API_URL;
-      console.log(API_URL);
 
-      
+
       const response = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -37,7 +36,6 @@ const SignUp = () => {
           password: formData.password,
         }),
       });
-    
 
       if (!response.ok) {
         throw new Error("Server error, unable to sign up.");
