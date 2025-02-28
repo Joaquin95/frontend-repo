@@ -22,7 +22,6 @@
         "eslint": "^9.17.0",
         "eslint-plugin-react": "^7.37.2",
         "eslint-plugin-react-hooks": "^5.0.0",
-        "serve": "^14.2.4",
-
+        "serve": "^14.2.4"
     }
 }
