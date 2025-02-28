@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "npm install --global vite && vite build",
         "preview": "vite preview",
         "start": "serve -s frontend/dist"
     },
