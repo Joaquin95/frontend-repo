@@ -35,6 +35,10 @@ const SignUp = () => {
         }),
       });
 
+      if (!response.ok) {
+        throw new Error("Server error, unable to sign up.");
+      }
+
       const data = await response.json();
       if (response.ok) {
         setMessage("Sign-up successful!");
