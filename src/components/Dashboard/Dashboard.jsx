@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FaBitcoin, FaEthereum, FaTether, FaSignOutAlt } from "react-icons/fa6";
+import { FaBitcoin, FaEthereum, FaTether, FaSignOutAlt } from "react-icons/fa";
 import { Line } from "react-chartjs-2";
 import "./Dashboard.css"; 
 
