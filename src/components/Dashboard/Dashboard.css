@@ -1,48 +1,75 @@
-.dashboard-container {
+/* body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+
+.sidebar {
+  width: 250px;
+  background: #181818;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.sidebar h2 {
+  color: gold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: gold;
+  color: black;
+  border-radius: 5px;
+}
+
+.sidebar .logout {
+  color: red;
+  margin-top: auto;
+}
+
+
+.dashboard-main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(to bottom, #090979, #020024);
-  color: white;
-  font-family: "Arial", sans-serif;
+}
+
+.portfolio {
+  display: flex;
+  gap: 20px;
+}
+
+.crypto-card {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
   text-align: center;
 }
-.dashboard-content {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  max-width: 400px;
-  width: 90%;
-}
 
-.dashboard-header {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.logout-button {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.logout-button:hover {
-  background-color: #322e75;
-}
+.chart {
+  margin-top: 30px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+} */

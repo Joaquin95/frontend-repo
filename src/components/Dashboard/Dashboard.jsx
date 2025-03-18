@@ -30,11 +30,10 @@ const Dashboard = () => {
       fill: true,
     },
   ],
-};  }
+};
 
 return (
   <div className="dashboard">
-    {/* Sidebar */}
     <aside className="sidebar">
       <h2>Dashboard</h2>
       <ul>
@@ -49,14 +48,14 @@ return (
       </ul>
     </aside>
 
-    {/* Main Content */}
+
     <main className="dashboard-main">
       <header>
         <h1>Welcome, {user.name}</h1>
         <p>Total Balance: <strong>$154,610</strong></p>
       </header>
 
-      {/* Crypto Portfolio Cards */}
+
       <section className="portfolio">
         {portfolio.map((crypto, index) => (
           <div key={index} className="crypto-card">
@@ -68,7 +67,6 @@ return (
         ))}
       </section>
 
-      {/* Chart Section */}
       <section className="chart">
         <h2>Bitcoin Price Trend</h2>
         <Line data={chartData} />
@@ -76,5 +74,5 @@ return (
     </main>
   </div>
 );
-
+};
 export default Dashboard;
