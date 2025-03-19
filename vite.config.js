@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "frontend/dist",
-    rollupOtions: {
-      external: ['react-icons/fa'],
+    rollupOptions: {
+      external: ["react-icons/fa", "react-chartjs-2", "chart.js"],
     },
   },
 });
