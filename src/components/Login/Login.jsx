@@ -11,24 +11,27 @@ const Login = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const { email, password } = formData;
     // Validate form data
 
     if (!email || !password) {
       setMessage("Email and password are required.");
+      setLoading(false);
       return;
     }
 
     try {
-
       const API_URL = import.meta.env.VITE_API_URL;
 
       const response = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
-        credentials: "include", 
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
@@ -46,6 +49,7 @@ const Login = () => {
       console.error("Login error:", error);
       setMessage("Network error. Please try again.");
     }
+    setLoading(false);
   };
 
   return (
@@ -56,6 +60,7 @@ const Login = () => {
         <input
           type="email"
           name="email"
+          aria-label="Email"
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
@@ -64,12 +69,15 @@ const Login = () => {
         <input
           type="password"
           name="password"
+          aria-label="Password"
           placeholder="Password"
           value={formData.password}
           onChange={handleChange}
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit" disabled={loading}>
+          {loading ? "Logging in..." : "Login"}
+        </button>
       </form>
     </div>
   );
