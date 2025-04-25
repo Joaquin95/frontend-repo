@@ -49,7 +49,7 @@ const SignUp = () => {
         setMessage(data.error || "Sign-up failed.");
       }
     } catch (error) {
-      setMessage("Network error. Try again");
+      setMessage("This Email is already in use.");
     }
   };
 
