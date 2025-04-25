@@ -14,7 +14,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.email || !formData.password) {
+    const { email, password } = formData;
+    // Validate form data
+
+    if (!email || !password) {
       setMessage("Email and password are required.");
       return;
     }
@@ -23,7 +26,7 @@ const Login = () => {
 
       const API_URL = import.meta.env.VITE_API_URL;
 
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         credentials: "include", 
         headers: {
@@ -40,6 +43,7 @@ const Login = () => {
         setMessage(data.error || "Invalid email or password.");
       }
     } catch (error) {
+      console.error("Login error:", error);
       setMessage("Network error. Please try again.");
     }
   };
